@@ -1,0 +1,53 @@
+---
+title: Authentication
+desc: Authentication vs. Authorization
+homework: 1) Security related readings, write a response 2) Complete working on Rails PA2; 3) Teams continue working on products.
+---
+<%= homework_hdr %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
+
+1. <%= partbadge %> <%= pdfbadge %> **Read:** Security in Rails
+  * Read [Rails Security Guide](http://guides.rubyonrails.org/security.html)
+  * Read about: [Brakeman Gem](https://github.com/presidentbeef/brakeman)
+  * <%= deliverable "Submit a post (pdf) with some specific things that you will be able to use in your product from these two readings. This is an individual deliverable." %>
+1. **Teams:** You should be up to around steps **DB, UNITTEST, ACCTS, AUTHENT** of the <%= link_to_project :project_roadmap %>
+
+### Leftover from last week!
+
+<%= include_topic :how_forms_views_work %>
+
+#### Let me demonstrate...
+
+* Demo: <%= link_to_topic :hw_railsform %>.
+* Demo: <%= link_to_topic :hands_on_forms_demo %>
+
+### Review Review: resources in Rails
+
+* Automatic wiring of plumbing between urls, routing, models, and controllers
+* Takes advantage of standardized patterns
+    * Nesting model in the URLs
+    * CRUD operations as actions
+    * Path naming (path_to_user instead of "")
+    * Controller naming
+* Huge time saver and bug saver!
+
+##### Controller Actions
+* Who calls the controller action?
+* What parameters are supplied automatically by the controller action?
+* Sessions, why they are needed and how they work
+* Why does it take two separate actions to implement "create"?
+* <%= link_to_topic :url %>
+
+### Authentication and Authorization
+<%= include_topic :intro_auth %>
+
+#### Possible implementation strategies in Rails
+* Roll your own, using simple authentication. My preferred approach for this course.
+* Look at other options: [Clearance](https://github.com/thoughtbot/clearance) or [Sorcery]( https://github.com/Sorcery/sorcery),  [Authlogic](http://www.rubydoc.info/github/binarylogic/authlogic), or [Devise](https://github.com/plataformatec/devise)
+
+#### Demos
+* <%= link_to_topic :clearance_authdemo %>
+* <%= link_to_topic :basic_authentication %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>

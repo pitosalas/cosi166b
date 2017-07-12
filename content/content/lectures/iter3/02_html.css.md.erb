@@ -1,0 +1,43 @@
+---
+title: HTML, CSS and friends
+desc: All the languages of the world wide web
+homework: 1) Read Chapter 8 of RORT; 2) Read Guide to helpers; 3) Continue product work
+---
+<%= homework_hdr %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
+
+1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 8, "Basic Login". This chapter covers routes, controllers and actions, reviewing what was demoed in class last week. You will encounter the vaunted `form_for` again. And you will for the first time you will see the routes "resources" line. You will finally deploy what you have so far onto Heroku.
+
+    As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
+
+    * What does it mean when we say that the HTTP protocol is "stateless." Why does this pose a challenge for processing authentication?
+    * The `log_in` method has this line: `session[:user_id] = user.id`. Explain it.
+    * How is a logout achieved?
+    * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 10am on the day of class." %>
+
+1. **Read:** [Rails Guide on Form Helpers](http://guides.rubyonrails.org/form_helpers.html) with a metaphorical pen and paper in hand.
+1. **Teams:** You should be up to around steps **DB, UNITTEST, ACCTS, AUTHENT** of the <%= link_to_project  :project_roadmap %>
+
+#### Text Based formats / languages
+* There are many
+  * XML - granddaddy of them all
+  * HTML (HAML, Markdown)
+  * JSON (YAML)
+  * CSS (SASS, SCSS, LESS)
+  * ERB
+
+* They are all like little programming languages
+  * Syntax checking and syntax errors
+  * Versions (HTML5, )
+  * Given to 'interpreter' or 'compiler' to do something
+
+#### Lightning Reviews
+* <%= link_to_topic :xml %>
+* <%= link_to_topic :html %>
+* <%= link_to_topic :css %>
+* <%= link_to_topic :bootstrap %>
+* <%= link_to_topic :json %>
+* <%= link_to_topic :erb %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
