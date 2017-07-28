@@ -30,7 +30,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 SECTION_CONFIG = [
   SectionDef.new("Introduction", "intro", hidden: false, type: :section, bullet: :star),
   SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
-  SectionDef.new("Term Project", "project", hidden: false, type: :section),
+  SectionDef.new("Term Project", "projects", hidden: false, type: :section),
   SectionDef.new("Background", "background", hidden: false, type: :section),
   SectionDef.new("Topics", "topics", hidden: true, type: :section),
   SectionDef.new("Extras", "extras", hidden: true, type: :section)
