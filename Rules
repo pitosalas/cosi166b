@@ -23,7 +23,7 @@ end
 compile '/**/*.{md,ical}.erb' do
   if item[:status] != "hidden"
     filter :erb
-    filter :kramdown
+    filter :kramdown, enable_coderay: true, coderay_line_numbers: nil
     layout '/course.*'
   else
     nil
