@@ -9,7 +9,7 @@ cat: rails
 
 <%= callout("Previous Students Say"," \"It's tempting to just pick any old product and just move on. Not a good idea! You might regret that later. You will be spending a lot lot of time with the choice, so it's worth choosing with care.\"") %>
 
-1. <%= partbadge %> <%= timebadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 2. This is going to be another exciting chapter. Don't worry if a lot of things seem "magic", as the classes continue it will all become crystal clear to you! For this chapter you are going to create a toy application. Make sure you understand what the app is trying to do and actually follow along. I strongly recommend that you type in the code just like what he says in the book because from my experience youy will learn a lot more that way. You will use the `rails` command and the `rake` command as part of your development process. You will for the first time start the process of understanding really how a web server actually works! Take your time and see if you can make it all the way to the end and get it all to work. You will hit snags. Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
+1. <%= partbadge %> <%= timebadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 2. Look at <%= link_to_topic :rails51_notes %> for late breaking addenta and errata. This is going to be another exciting chapter. Don't worry if a lot of things seem "magic", as the classes continue it will all become crystal clear to you! For this chapter you are going to create a toy application. Make sure you understand what the app is trying to do and actually follow along. I strongly recommend that you type in the code just like what he says in the book because from my experience youy will learn a lot more that way. You will use the `rails` command and the `rake` command as part of your development process. You will for the first time start the process of understanding really how a web server actually works! Take your time and see if you can make it all the way to the end and get it all to work. You will hit snags. Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
 
     * What is a url and what role does it play in the MVC architecture and the basic operation of a web server?
     * What job does a `view` and a `model` do in the MVC architecture?
@@ -20,13 +20,14 @@ cat: rails
 #### Additional, optional reading
 Where I give you links to some very new articles or papers that you might find interesting
 
-* [A Beginner’s Guide To Managing Software Development with Kanban and Trello](https://www.toptal.com/agile/guide-managing-development-kanban-trello?utm_campaign=blog_post_guide_managing_development_kanban_trello&utm_medium=email&utm_source=blog_subscribers)d
+* [A Beginner’s Guide To Managing Software Development with Kanban and Trello](https://www.toptal.com/agile/guide-managing-development-kanban-trello?utm_campaign=blog_post_guide_managing_development_kanban_trello&utm_medium=email&utm_source=blog_subscribers)
 
 #### Homework Discussion
 * How did it go with Chapter 2?
 * What is an ORM?
 * What is MVC?
-* Brainstorm: What are all the things that happen when I type http://www.salas.com into my web browser? Everyone talks!
+
+<%= include_topic :http %>
 
 <%= include_topic :how_web_servers_work %>
 
