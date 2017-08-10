@@ -1,20 +1,11 @@
 ---
-title: First PR Meeting
-desc: First time the teams meet the PRs and get chosen
-homework: 1)  Teams - prepare brief presentations on your product for PRs; 2) Chapter 3 of RORT, do warmups
-cat: prod
+title: Building the Database
+desc: Applying what we learned to an actual db implementation
+homework: 1) Read RORT Chapter 3, do warmups; 2) Continue working on PA Rails 1; 2) Teams continue working on projects
+cat: db
 ---
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
-
-1. **Team PR Pre-discussion**: Each team has to prepare for the meeting with the PRs. Continue refining your idea and trying to make sure you are all in agreement on the direction. Also, prepare a brief presentation for the PRs:
-
-    * Plan to talk for no more than 5 minutes per project. Less is ok too.
-    * **make sure** one of you can describe the product concept clearly so the PRs understand it.
-    * Show whatever you have already on the product's design, for example the list of features, sketches of the home page, idas about the architecture. Whatever you have.
-    * Slides are not required (but are certainly ok if it helps you)
-    * **make sure** Prepare a one page summary of the above information and print around 10 copies.
-^
 
 {:start="2"}
 1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 3. While we are working towards having a web site with dynamically generated web pages, a good place to start is with static pages, which is what this chapter is about. As you recall, at the most basic level, a web server receives an http request including a URL, and responds with html which is then displayed in the browser. Also we are first introduced to writing unit tests. There is a lot to learn in this chapter so take your time, and ideally type in the examples and get them to work! Take your time and see if you can make it all the way to the end and get it all to work. You will hit snags. Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
@@ -23,12 +14,15 @@ cat: prod
     * What does the statement "render html: "Hello world" do? (Listing 3.4 of the chapter)
     * How would you modify the sample app from the chapter, to have one more page, which would be "FAQ" page?
     * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 8am on the day of class." %>
+1. **Rails PA 1**: Continue working on <%= link_to_topic :pa_rails_1 %>
+1. **Project Teams:** You should be working or completed steps **GIT, DOCUMENTATION, PLANSKEL, SHEMASKEL, BUILDSKEL, STORYSDV, PAPERSDV, SCHEMASDV**.
 
-#### Plan
-* We will meet and hear about the backgrounds of each of the PRs
-* Each team will have 5 minutes to describe their chosen direction
-* The PRs will consult and decide which two product each PR takes on
-* Any remaining time will be spent with PRs and their product teams.
+#### Homework Discussion
+* Lets talk about stuff you just didn't understand.
+* Lets take a quick tour of a rails app and do some experimenting
 
-#### Next Class
+<%= include_topic :models %>
+<%= include_topic :database_migration %>
+
+#### Look at next class
 * Look at homework <%= link_to_next_lecture %>
