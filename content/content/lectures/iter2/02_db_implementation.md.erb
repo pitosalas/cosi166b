@@ -1,0 +1,28 @@
+---
+title: (LAB) Building the Database
+desc: Applying what we learned to an actual db implementation
+homework: 1) Read RORT Chapter 4, do warmups; 2) Teams continue working on projects
+cat: db
+---
+<%= homework_hdr %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
+
+1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 4, "Rails Flavored Ruby". This is an easier chapter, reviewing a variety of Ruby topics that are extended in Rails. This is possible by the way because Ruby as a programming language is very extensible, and Rails takes advantage of this. It has not been unusual to notice features invented by the Rails team which over time get moved into Ruby core. This chapter is an excellent review of Ruby as well. As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
+
+    * Give me your explanation of what a symbol is in Ruby. Write a very brief few lines of Ruby to illustrate.
+    * What is meant by the idea that Ruby classes can be "opened up" or "reopened"?
+    * What is the difference between 'require' and 'require_relative' in Ruby?
+    * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 8am on the day of class." %>
+
+{:start="2"}
+1. **Projects:** You should be working or completed steps **GIT, DOCUMENTATION, PLANSKEL, SHEMASKEL, BUILDSKEL, STORYSDV, PAPERSDV, SCHEMASDV**.
+
+#### Homework Discussion
+* Lets talk about stuff you just didn't understand.
+* Lets take a quick tour of a rails app and do some experimenting
+
+<%= include_topic :models %>
+<%= include_topic :database_migration %>
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
