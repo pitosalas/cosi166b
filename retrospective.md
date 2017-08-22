@@ -12,3 +12,11 @@
 * Here are two examples of lectures with too many and too confusing assignments:
 http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter2/07_sprint_1.md/ and
 http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter3/08_web_services_cont.md/
+
+
+Guest Lectures
+Andy Payne: Sept 19
+Yoav Shapira: Oct 17
+Francois Gossieaux: Nov 2
+Barry Ruditsky: Nov 16
+Bill Wittenberg: Dec 5
