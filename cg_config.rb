@@ -11,7 +11,7 @@ COPYRIGHT_STRING = "Copyright (2014-2017) R. Pito Salas, pitosalas@brandeis.edu"
 
 # Course short name
 COURSE_SHORT_NAME = "COSI 166b"
-COURSE_LONG_NAME = "Software Engineering"
+COURSE_LONG_NAME = "Capstone Project for Software Engineering"
 COURSE_ABBREV = "166b"
 
 # Schedule information. Note that Monday is day 0
