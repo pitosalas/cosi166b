@@ -2,8 +2,10 @@
 #   watch(%r{file/path}) { `command(s)` }
 #
 guard :shell do
-   clearing :on
-   directories %w(. /mydev/cg-topics)
-  watch(/.erb/) { |m| `cg compile` }
-  watch(/(cg_config.rb|Rules)/) { |m| `cg reset; cg compile`}
+  # clearing :on
+  directories %w(. /mydev/cg-topics)
+  # watch(/.erb/) {`cg compile` }
+  # watch(/.rb/) { `cg compile` }
+  # watch(/Rules/) { `cg compile` }
+  watch(%r{(Rules)|(.erb)|(.rb)}) { `cg compile` }
 end
