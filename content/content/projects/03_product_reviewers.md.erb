@@ -1,7 +1,6 @@
 ---
 title: Product Reviewers
 ---
-#### Panel Members and Product pairups
 <% table = ::TableHelper.new(:default) %>
 <% table.headers("Name", "email", "Projects") %>
 <% table.row("Michael Raybman", "mraybman@gmail.com", "TBD") %>
@@ -9,3 +8,5 @@ title: Product Reviewers
 <% table.row("Steve Yost", "syost@quicktopic.com", "TBD") %>
 <% table.row("Alex Kieft", "alex@knowledgevision.com", "TBD") %>
 <%= table.render %>
+
+<%= include_topic :product_reviewer_meetings %>
