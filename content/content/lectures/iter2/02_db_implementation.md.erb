@@ -1,7 +1,7 @@
 ---
 title: Building the Database
-desc: Applying what we learned to an actual db implementation
-homework: 1) Read RORT Chapter 4, do warmups; 2) Teams continue working on projects
+desc: Designing database schemas
+homework: 1) Read RORT Chapter 4, do warmups; 2) Teams continue working on projects; 3) PR Meeting summary
 cat: db
 ---
 <%= homework_hdr %>
@@ -17,12 +17,23 @@ cat: db
 {:start="2"}
 1. **Projects:** You should be working or completed steps **GIT, DOCUMENTATION, PLANSKEL, SHEMASKEL, BUILDSKEL, STORYSDV, PAPERSDV, SCHEMASDV**.
 
-#### Homework Discussion
-* Lets talk about stuff you just didn't understand.
-* Lets take a quick tour of a rails app and do some experimenting
+1. <%= pdfbadge %> **Report**: Write your PR Meeting review summary. Summarize the key learnings, and the action items that you promised for the next meeting with your PR. <%= team_deliverable "Your report, +/-1 page." %>
 
-<%= include_topic :models %>
+<%= include_topic :mvc_review %>
+
+#### Models and the Database
+
+<%= callout("NB", " If you don't know the schema of your app, you don't know your app - Said last year by one of our product reviewers") %>
+
+* ORM means we have to keep the database and the Objects "in sync"
+* What happens if in release 2 I have to modify the database?
+
+
 <%= include_topic :database_migration %>
+<%= include_topic :ar_db_mechanics %>
+
+#### Live coding
+* <%= link_to_topic :rails_db_models %>
 
 #### Look at next class
 * Look at homework <%= link_to_next_lecture %>
