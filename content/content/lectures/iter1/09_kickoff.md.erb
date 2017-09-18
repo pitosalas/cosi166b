@@ -7,12 +7,17 @@ cat: prod
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
 
-1. <%= zipbadge %> **Movies_2**: Complete <%= link_to_topic :pa_movies_2 %> Look closely at the end of <%= link_to_topic :pa_movies_2 %> where two deliverables are specified. <%= deliverable "Upload your code to github; run it through Codeclimate; write a post with the requested information about your solution. Zip up the directory and submit it to Latte" %>
+1. <%= zipbadge %> **Movies_2**: Complete <%= link_to_topic :pa_movies_2 %> Look closely at the end of <%= link_to_topic :pa_movies_2 %> where two deliverables are specified. <%= deliverable "Zip up your deliverables directory and submit it to Latte" %>
 1. <%= pdfbadge %> Each team meets for at least 90 minutes to discuss and decide on their direction. Confirm team members. Decide on specific weekly meeting time. Treat it with the seriousness that you would a class commitment. Discuss and decide the product you want to build. What interests the team most about this product. What functionality the SDV (see <%= link_to_project :product_plan_of_attack %>) should contain. (You can also refer to <%= link_to_project :project_roadmap %> for some further background details.) Start collecting a detailed list. Kanban is one of the easiest forms of Agile planning to implement so we will be using that for our projects. You can find lots and lots of information about Kanban on the web. Read: [A Beginner’s Guide To Managing Software Development with Kanban and Trello](https://www.toptal.com/agile/guide-managing-development-kanban-trello?utm_campaign=blog_post_guide_managing_development_kanban_trello&utm_medium=email&utm_source=blog_subscribers). Also Watch this [Video about implementing Kanban with Trello](https://www.youtube.com/watch?v=yrNbc8BwqRU
 ). In the team meeting one of you create the Trello board you will use for your project and add all your ideas and preliminary tasks to it. Begin tying names to Kanban cards.  <%= team_deliverable "Write your project kickoff post containing all that." %>
 
 #### Additional Optional Reading
 * [The Kanban methodology](https://www.atlassian.com/agile/kanban)
+
+#### Discussion
+* Results of Movies_2?
+* Performance?
+* Discussion of Trello and Kanban
 
 <%= include_from_section :projects, :product_plan_of_attack %>
 <%= include_from_section :projects, :project_roadmap %>
