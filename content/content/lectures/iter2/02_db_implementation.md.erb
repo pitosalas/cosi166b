@@ -19,6 +19,12 @@ cat: db
 
 1. <%= pdfbadge %> **Report**: Write your PR Meeting review summary. Summarize the key learnings, and the action items that you promised for the next meeting with your PR. <%= team_deliverable "Your report, +/-1 page." %>
 
+
+#### Discussion
+* What are gems
+* Whats going on in the gemfile?
+* What gems should we use? [What gems?](http://lmgtfy.com/?q=rails+must+have+gems)
+
 <%= include_topic :mvc_review %>
 
 #### Models and the Database
@@ -29,11 +35,8 @@ cat: db
 * What happens if in release 2 I have to modify the database?
 
 
-<%= include_topic :database_migration %>
 <%= include_topic :ar_db_mechanics %>
-
-#### Live coding
-* <%= link_to_topic :rails_db_models %>
+<%= include_topic :ar_db_types %>
 
 #### Look at next class
 * Look at homework <%= link_to_next_lecture %>
