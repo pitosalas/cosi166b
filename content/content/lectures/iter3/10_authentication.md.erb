@@ -6,10 +6,6 @@ homework: 1) Security related readings, write a response Teams continue working 
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
 
-1. <%= partbadge %> <%= pdfbadge %> **Read:** Security in Rails
-  * Read [Rails Security Guide](http://guides.rubyonrails.org/security.html)
-  * Read about: [Brakeman Gem](https://github.com/presidentbeef/brakeman)
-  * <%= deliverable "Submit a post (pdf) with some specific things that you will be able to use in your product from these two readings. This is an individual deliverable." %>
 1. **Teams:** You should be up to around steps **DB, UNITTEST, ACCTS, AUTHENT** of the <%= link_to_project :project_roadmap %>
 
 ### Leftover from last week!
@@ -38,16 +34,6 @@ homework: 1) Security related readings, write a response Teams continue working 
 * Why does it take two separate actions to implement "create"?
 * <%= link_to_topic :url %>
 
-### Authentication and Authorization
-<%= include_topic :intro_auth %>
-
-#### Possible implementation strategies in Rails
-* Roll your own, using simple authentication. My preferred approach for this course.
-* Look at other options: [Clearance](https://github.com/thoughtbot/clearance) or [Sorcery]( https://github.com/Sorcery/sorcery),  [Authlogic](http://www.rubydoc.info/github/binarylogic/authlogic), or [Devise](https://github.com/plataformatec/devise)
-
-#### Demos
-* <%= link_to_topic :clearance_authdemo %>
-* <%= link_to_topic :basic_authentication %>
 
 #### Look at next class
 * Look at homework <%= link_to_next_lecture %>

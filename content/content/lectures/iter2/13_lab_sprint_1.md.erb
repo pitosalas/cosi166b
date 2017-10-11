@@ -1,0 +1,31 @@
+---
+title: (LAB-Sprint 1) Intro To Authentication
+desc: Intro to Authentication
+homework: 1) Rails security readings; 2) Contunue with projects; 3) Continue with PA Rails 2
+cat: rails
+---
+<%= homework_hdr %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
+
+1. **Read:** Security in Rails
+    * Read [Rails Security Guide](http://guides.rubyonrails.org/security.html)
+    * Read about: [Brakeman Gem](https://github.com/presidentbeef/brakeman)
+    * Think about how this applies to your product
+1. **Projects:** You should be working on the steps up to around **\[URLSSDV\]** in <%= link_to_project :project_roadmap %>
+1. **Rails PA 2**: Continue working on <%= link_to_topic :pa_rails_2 %>, due Oct 20
+
+### Authentication and Authorization
+<%= include_topic :intro_auth %>
+
+#### Possible implementation strategies in Rails
+* Roll your own, using simple authentication. My preferred approach for this course.
+* Look at other options: [Clearance](https://github.com/thoughtbot/clearance) or [Sorcery]( https://github.com/Sorcery/sorcery),  [Authlogic](http://www.rubydoc.info/github/binarylogic/authlogic), or [Devise](https://github.com/plataformatec/devise)
+
+#### Demos
+* <%= link_to_topic :clearance_authdemo %>
+* <%= link_to_topic :basic_authentication %>
+
+
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
