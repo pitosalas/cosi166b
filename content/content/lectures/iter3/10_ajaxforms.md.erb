@@ -1,0 +1,69 @@
+---
+title: Ajax in Rails
+desc: Using Ajax with Rails
+homework: 1) Continue work on Rails PA3; 2) Continue work on Project
+---
+<%= homework_hdr %>
+**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
+
+1. **Rails PA 3**: Continue working on <%= link_to_topic :pa_rails_3 %>, due Friday!
+1. **Teams**: Continue working on your projects!
+
+#### Useful, but not mandatory, reading
+* [JQuery functions and their Pure Javascript Equivalents](http://callmenick.com/post/jquery-functions-javascript-equivalents)
+* [Unobtrusive JavaScript via Ajax in Rails](https://blog.codeship.com/unobtrusive-javascript-via-ajax-rails/)
+* [How to Show and Hide Elements with Vanilla Javascript](https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/)
+* [8 Simple CSS3 Transitions that will Wow Your Users](https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/)
+* [Rails 5.1 Form_with vs. form_tag and form_for](https://m.patrikonrails.com/rails-5-1s-form-with-vs-old-form-helpers-3a5f72a8c78a)
+
+#### Ajax Review
+* Usual process in web server
+  * Browser issues an HTTP Request
+  * Server responds by running action, which generates html
+  * HTML is used for the response to the browser
+  * Browser displays it
+* Ajax process
+  * Browser issues an HTTP request
+  * Request is issued for remote processing
+  * "In background"
+  * `remote: true`
+  * Server responds by running action, which generates javascript
+  * Returned to the browser
+  * Browser executes it
+* Javascript processing
+  * JS is a general purpose language
+  * Browser exposes the DOM as `document.`
+  * Executing js can access and modify the
+
+#### Forms Review
+* form_for, form_with, form_tag
+* remote: true, default with form_with
+* Think about what the submit button does:
+  * for remote:true, it does a post or patch, requesting .js response
+  * for remote:false, it does a post or patch, requesting .html response
+  * if url was .json, it does a post or patch, requesting .json back
+* How to ajaxify a form
+  * **Decide precisely what you want to do**
+  * Example where we change 'date updated' with ajax
+
+#### Code Review
+* Look at RailsAjaxDemo
+* Look at FormsDemo for Search
+
+#### Server Push
+* Not a real term :)
+* Many different ways of approaching. Sort of immature right now
+* Key techniques are:
+  * Periodic background polling by browser
+  * WebSockets and variants which maintain an open connection to server
+  * Rails 5 Action Cable
+* Some links to study further:
+  * New Service to support Pusher on a separate Service: [Pusher Service - free push](http://pusher.com)
+  * How to use WebSockets on Heroku: [Websockets on Heroku](https://devcenter.heroku.com/articles/ruby-websockets)
+  * Rails 5 Action Cable, [YouTube Demo of Rails 5 Action Cable](https://www.youtube.com/watch?v=n0WUjGkDFS0)
+
+* Look at FormsDemo for Pusher
+
+
+#### Look at next class
+* Look at homework <%= link_to_next_lecture %>
