@@ -8,31 +8,32 @@ cat: advanced
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF |  <%=cloudbadge %>: Portfolio | <%=zipbadge %>: Zipped
 
 1. <%= partbadge %> <%= pdfbadge %> **Read and do**: Articles and do steps below:
-  * [RESTful Web Services](http://www.ibm.com/developerworks/webservices/library/ws-restful/)
-  * Download and install this [WebService Demo Code](https://github.com/pitosalas/webservicedemo) to your computer. Look at all the examples and get them to work. Understand what they are doing.
-  * Download and install a REST Client app. For example [rest-client](https://code.google.com/p/rest-client/) or [Chrome Advanced Rest Client](https://chrome.google.com/webstore/detail/advanced-rest-client/)
-  * Familiarize yourself with one or two real Web Services (also called Web APIs or APIs). Here are some interesting starting points:
-    1. Everything known about wine: [Wine.com API](https://api.wine.com)
-    1. Open Government Data: [Sunlight Foundation API](http://sunlightfoundation.com/api/)
-    1. APIs of cooking recipes: [Yummly](https://developer.yummly.com)
-    1. [Reddit API](https://github.com/reddit/reddit/wiki/API)
-    1. [US Census Bureau](http://www.census.gov/developers/)
-    1. [Weather Information](http://www.wunderground.com/weather/api/)
-    1. A huge directory of all kinds of web services: [Programmable Web](http://www.programmableweb.com)
-  * Most web services (APIs) need an API-key of some kind (free). Get one
-  * Experiment with the REST client and one of the Web services described above
-  * Using the REST client app above: try some calls and get them to work
-  * <%= deliverable "A post describing your experience. What api you tried and what you learned. And describing one specific way in which your product could use a Web Service API" %>
-1. **Read**: About [Feature Toggles](http://martinfowler.com/articles/feature-toggles.html), and about [WebSockets and ActionCables](http://www.sitepoint.com/action-cable-and-websockets-an-in-depth-tutorial/?utm_source=rubyweekly&utm_medium=email)
+    * [RESTful Web Services](http://www.ibm.com/developerworks/webservices/library/ws-restful/)
+    * Download and install this [WebService Demo Code](https://github.com/pitosalas/webservicedemo) to your computer. Look at all the examples and get them to work. Understand what they are doing.
+    * Download and install a REST Client app. For example [rest-client](https://code.google.com/p/rest-client/) or [Chrome Advanced Rest Client](https://chrome.google.com/webstore/detail/advanced-rest-client/)
+    * Familiarize yourself with one or two real Web Services (also called Web APIs or APIs). Here are some interesting starting points:
+      1. Everything known about wine: [Wine.com API](https://api.wine.com)
+      1. Open Government Data: [Sunlight Foundation API](http://sunlightfoundation.com/api/)
+      1. APIs of cooking recipes: [Yummly](https://developer.yummly.com)
+      1. [Reddit API](https://github.com/reddit/reddit/wiki/API)
+      1. [US Census Bureau](http://www.census.gov/developers/)
+      1. [Weather Information](http://www.wunderground.com/weather/api/)
+      1. A huge directory of all kinds of web services: [Programmable Web](http://www.programmableweb.com)
+    * Most web services (APIs) need an API-key of some kind (free). Get one
+    * Experiment with the REST client and one of the Web services described above
+    * Using the REST client app above: try some calls and get them to work
+    * <%= deliverable "A post describing your experience. What api you tried and what you learned. And describing one specific way in which your product could use a Web Service API" %>
+1. **Read**: [WebSockets and ActionCables](http://www.sitepoint.com/action-cable-and-websockets-an-in-depth-tutorial/?utm_source=rubyweekly&utm_medium=email)
 
-#### Useful, but not required reading
+#### For Further Study
 * [Build a JSON API with Rails 5 ](https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one)
+* [Feature Toggles](http://martinfowler.com/articles/feature-toggles.html), and
+* [Real Time Rails, WebSockets](https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable)
 
 #### Creating a WEB Service
 * Fortune API deployed on Heroku
-  * Visit the fortune_api: [Fortune API on Heroku](https://psfortune.herokuapp.com/fortune/random)
-  * Let's take a look at the code
-  * Let's also look at the rails code in [Web Service Demo Code](https://github.com/pitosalas/webservicedemo)
+  * Visit the fortune_api: [Fortune API on Heroku](https://rpsfortune.herokuapp.com/fortune/random)
+  * Let's take a look at the code [Restapidemo](https://github.com/pitosalas/restapidemo)
 
 #### Accessing a web service
 * Accessing and testing out a Web Api before using it
@@ -45,19 +46,36 @@ cat: advanced
 #### Web PUSH Capability
 * Defined
 * Often used in conjunction with AJAX
-
-##### Websockets
 * Websockets: Why are they needed?
+* It's all about SCALE!
 
 <%= include_image "https://heroku-blog-files.s3.amazonaws.com/posts/1473343847-1462551384-websocket-protocol.png" %>
 
-<%= include_image "https://heroku-blog-files.s3.amazonaws.com/posts/1473343847-1462551384-websocket-protocol.png" %>
+#### Push capability in Rails
+* Options: Homegrown, pusher.com or Rails ActionCable
+* Homegrown
+  * Directly code WebSockets code in Javacript. Most complicated
+* Pusher.com
+  * Pretty simple, but involves a 3d party vendor
+  * Small cases: free
+  * Large cases: cost
+* ActionCable
+  * A little more complicated (so far)
+  * Need to set up a new server (Redis)
+  * You control cost fully
 
-##### ActionCable
+#### Pusher.com Example
+* Separate Service
+* [Heroku Demo](https://rpsformsdemo.herokuapp.com)
+* Lets play with it
+* Lets look at the code
+
+#### Rails ActionCable Example
 * Rails: ActionCable: Railsification of Websockets
 * [Heroku Demo](https://pscabledemo.herokuapp.com/homes/1)
 * Uses system cache software called "Redis"
 * Rails Server also acts as a WebSockets server
+* Quick look at Heroku dashboard
 * Channel:
   * Communication channel, carrying "messages"
   * Analogous to a Controller
@@ -68,7 +86,6 @@ cat: advanced
 * Consumer
   * Usually it is the web browser of a user
   * It can subscribe to messages from a certain channel
-* An example that I found useful: [Real Time Rails, WebSockets](https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable)
 
 #### Look at next class
 * Look at homework <%= link_to_next_lecture %>
