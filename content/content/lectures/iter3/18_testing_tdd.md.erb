@@ -19,21 +19,31 @@ cat: testing
 #### For Further Study
 * [Test Doubles in Theory, in Minitest and Rspec](http://ieftimov.com/test-doubles-theory-minitest-rspec). Test doubles, mocks, and similar concepts are a powerful abstraction for independently testing complex subsystems. Of course we're using minitest, but rspec is a popular alternative test framework. Bottom line they are both quite similar to each other.
 * [Minitest Quick Reference](http://mattsears.com/articles/2011/12/10/minitest-quick-reference)
+* [Getting Started with Minitest](https://blog.codeship.com/getting-started-with-minitest/)
+* [Code Samples from MiniTest Cookbook](https://github.com/chriskottom/minitest_cookbook_source.git)
+
+#### Donald Knuth quote
+* Interesting from an old archival letter between Knuth and Emde Boas.
+* Knuth very famous, Emde Boas, not so much.
+* If you look at the attached paper you also see what I think is one of the very earliest uses of classes. It is on Figure 2: Page 1 of classroom note.
+
+<a href="https://staff.fnwi.uva.nl/p.vanemdeboas/knuthnote.pdf"><img src="/content/topics/images/bewarebugs.jpg" class="img-thumbnail" style="height:300px;"/></a>
+
+#### Testing and TDD Intro
+<%= include_topic :tdd_intro %>
 
 #### Discussion on the homework
+
 * Did you really do TDD? What is the key to it?
 * How did it feel to program in this way? Was it easier, harder, different?
 * Conventions: file names, separating the tests from the code (why?)
-
-#### Testing Intro
-<%= include_topic :tdd_intro %>
 
 #### Demo
 * <%= link_to_topic :tdd_demo %>
 
 #### Discussion
 * What do "I" do with testing in "real life"?
-*
+* Whats the difference between Rspec and Minitest?
 
 ##### Test Data
 * Sometimes known as test fixtures
@@ -43,16 +53,9 @@ cat: testing
 * Mocking objects
     * Let's look at some of the code that runs this web site.
     * Note slightly different syntax because of RSpec vs. minitest/spec
-    * [citem_spec.rb](https://github.com/pitosalas/curriculu/blob/master/spec/citem_spec.rb)
-    * [toc_spec.rb](https://github.com/pitosalas/curriculu/blob/master/spec/toc_spec.rb)
+    * [citem_spec.rb](https://github.com/pitosalas/coursegen/blob/master/spec/citem_spec.rb)
+    * [toc_spec.rb](https://github.com/pitosalas/coursegen/blob/master/spec/toc_spec.rb)
 
-#### Testing in Rails (if we have time)
-* Principle is the same
-* Remember there's no good reason to test whether Rails is doing what it is supposed to do
-* For example, whether validations are validating, or whether has_many is actually working
-    * Maybe a few tests to poke some holes, but certainly not each and every test.
-
-#### Let's take a tour of all the test bits that are created for free for you in Rails
 
 <%= include_topic :testing_concepts %>
 <%= include_topic :testing_pyramid %>
