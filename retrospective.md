@@ -1,4 +1,4 @@
-## Notes from experience teaching in 2017
+## Notes from experience teaching in Spring 2017
 
 * add a significant new amount of javascript
 * space out the PARails 1,2,3 so that they match better with the material
@@ -13,10 +13,6 @@
 http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter2/07_sprint_1.md/ and
 http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter3/08_web_services_cont.md/
 
-
-Guest Lectures
-Andy Payne: Sept 19
-Yoav Shapira: Oct 17
-Francois Gossieaux: Nov 2
-Barry Ruditsky: Nov 16
-Bill Wittenberg: Dec 5
+## Notes from Fall 2017
+* Move more part only work to end because thats when they are most busy
+* 
