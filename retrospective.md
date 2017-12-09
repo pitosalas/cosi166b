@@ -14,5 +14,26 @@ http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter2/
 http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter3/08_web_services_cont.md/
 
 ## Notes from Fall 2017
+* At the beginning of the semester show off some past project demos
 * Move more part only work to end because thats when they are most busy
-* 
+* Assignment: make sure you don't ask for something youve not covered yet.
+* Beware of last minute homework changes. Post to Latte no less than 1 week before
+* Make sure you dont put API key into github
+* Practice on how to learn things
+  * Start early to be able to ask questions
+  * Google it
+  * Use Stack Overflow
+  * Youtube videos
+  * Tutorials
+* Start planning early
+* Like the lab period
+* Shared google calendar requiring teams to sign up for a block of time
+* Have a student coem to class early to desceibe what the process and course was Like
+* Share the starting and ending code of live coding in a github account
+* Mention that i can help finding rooms to meet
+* 2 TWO: Hartl chapters a week, but dont start coding the group projects yet
+* Two DB homeworks too close together, and maybe first one be participation
+* PRs were not giving suggestions that were that useful
+* Give the PRs a more clear charter and explain expectations to both students and PRs
+* Maybe tell them to meet only twice: give a demo to the PR and get them feedback
+*
