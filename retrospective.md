@@ -36,4 +36,5 @@ http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter3/
 * PRs were not giving suggestions that were that useful
 * Give the PRs a more clear charter and explain expectations to both students and PRs
 * Maybe tell them to meet only twice: give a demo to the PR and get them feedback
-*
+
+
