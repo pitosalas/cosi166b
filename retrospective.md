@@ -28,7 +28,7 @@ http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter3/
 * Start planning early
 * Like the lab period
 * Shared google calendar requiring teams to sign up for a block of time
-* Have a student coem to class early to desceibe what the process and course was Like
+* Have a student come to class early to describe what the process and course was Like
 * Share the starting and ending code of live coding in a github account
 * Mention that i can help finding rooms to meet
 * 2 TWO: Hartl chapters a week, but dont start coding the group projects yet
