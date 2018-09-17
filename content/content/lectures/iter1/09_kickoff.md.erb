@@ -1,27 +1,29 @@
 ---
 title: Project Kickoff
 desc: Projects really start. Disuss the plan of attack and the roadmap
-homework: 1) Begin work on PA_RAILS_1; 2) Initial team meeting, learn and begin application of Kanban using Trello, write kickoff post
+homework: 1) Product Teams Kickoff and presentation; 2)  Begin work on PA_RAILS_1;
 cat: prod
 ---
 <%= homework_hdr %>
 **Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF | <%=zipbadge %>: Zipped
 
+1. <%= pdfbadge %> **Product Teams Kickoff and Presentation:** Each team meets for at least 2 hours to discuss and decide on their direction. Here are some specifics and topics to discuss
+    * Confirm team members. 
+    * Decide on specific weekly meeting time. Treat it with the seriousness that you would a class commitment. 
+    * Discuss and decide the product you want to build. It's ok to change things around so everyone is satisfied.
+    * Continue refining your idea and trying to make sure you are all in agreement on the direction. 
+    * Consider what interests the team most about this product. 
+    * What functionality the SDV might have (see <%= link_to_project :product_plan_of_attack %>) should contain. (You can also refer to <%= link_to_project :project_roadmap %> for some further background details.) 
+    * Prepare a brief 5 minute presentation, powerpoint (or equivalent). It can be informal.
+    * **make sure** one of you can describe the product concept clearly so the PRs understand it.
+    * <%= team_deliverable "Powerpoint for the 5 minute presentation." %>
+
+2. **PA Rails 1:** Begin work on <%= link_to_topic :pa_rails_1 %>. This will be due in about 10 days. It is fairly challenging so please look at it now.
+
 <%= callout("Alert:", " The series of PA Rails assignments (there are three) are pretty hard. You should not wait till the last minute!") %>
-
-1. <%= pdfbadge %> **Product** Each team meets for at least 90 minutes to discuss and decide on their direction. Confirm team members. Decide on specific weekly meeting time. Treat it with the seriousness that you would a class commitment. Discuss and decide the product you want to build. What interests the team most about this product. What functionality the SDV (see <%= link_to_project :product_plan_of_attack %>) should contain. (You can also refer to <%= link_to_project :project_roadmap %> for some further background details.) Start collecting a detailed list. Kanban is one of the easiest forms of Agile planning to implement so we will be using that for our projects. You can find lots and lots of information about Kanban on the web. Read: [A Beginner’s Guide To Managing Software Development with Kanban and Trello](https://www.toptal.com/agile/guide-managing-development-kanban-trello?utm_campaign=blog_post_guide_managing_development_kanban_trello&utm_medium=email&utm_source=blog_subscribers). Also Watch this [Video about implementing Kanban with Trello](https://www.youtube.com/watch?v=yrNbc8BwqRU). In the team meeting one of you create the Trello board you will use for your project and add all your ideas and preliminary tasks to it. Begin tying names to Kanban cards.  <%= team_deliverable "Write your project kickoff post containing all that." %>
-1. **PA Rails 1:** Begin work on <%= link_to_topic :pa_rails_1 %>. This will be due in about 10 days. It is fairly challenging so please look at it now.
-
-
-
-#### Additional Optional Reading
-* [The Kanban methodology](https://www.atlassian.com/agile/kanban)
 
 #### Discussion
 * Results of Movies_2? Performance? Accuracy?
-* Discussion of Trello and Kanban
-* What's a story
-* Backlog of stories
 
 <%= include_from_section :projects, :product_plan_of_attack %>
 <%= include_from_section :projects, :project_roadmap %>
