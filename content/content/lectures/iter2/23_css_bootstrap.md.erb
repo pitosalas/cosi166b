@@ -1,22 +1,33 @@
 ---
 title: CSS in the wild
-desc: More in depth introduction to CSS and it's role in web based applications
-homework: TBD
-cat: rails
+desc: More in depth introduction to CSS and it's role in web based applications.
+homework: 1) Introduce authentication into your prpoduct; 2) Read and respond to RORT 8; 3) Introduce automation and write a few tests
+cat: rails / UIBASIC
 ---
 <%= homework_hdr %>
-**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF | <%=zipbadge %>: Zipped
 
-1. **Rails PA 3**: Continue working on <%= link_to_topic :pa_rails_3 %>
-1. **Projects** You should be up to URLSDV. Demonstrate your "Walking Skeleton" on Heroku
+1. <%= partbadge %> <%= teambadge %> **Authentication**: Introduce authentication to your product. More detail: now that you've gone through the chapters in the Tutorial for creating a user record and a login screen, implement it in your product. <%= team_deliverable "Commit latest version of your product to github" %>
+1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 8, "Basic Login". This chapter covers routes, controllers and actions, reviewing what was demoed in class last week. You will encounter the vaunted `form_for` again. Notice that `form_for` and `form_tag` are still supported but as of Rails 5.1, there's a new `form_with` which will replace both eventually. And you will see for the first time in this tutorial, the routes "resources" line. You will finally deploy what you have so far onto Heroku.
 
-#### Optional, very useful reading
+    As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
+
+    * What does it mean when we say that the HTTP protocol is "stateless." Why does this pose a challenge for processing authentication?
+    * The `log_in` method has this line: `session[:user_id] = user.id`. Explain it.
+    * How is a logout achieved?
+    * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 10am on the day of class." %>
+2. <%= zipbadge %> **Product Test Automation**: Introduce automatic testing to your product
+    * Read up about the rails-admin gem and install it into your team product.
+    * Every individual member of each product team writes at least 3 Minitest-spec tests for the product
+    * <%= deliverable "Source file with the tests that YOU wrote in the product" %>
+
+##### Ongoing work
+* **Rails PA 3**: Continue working on <%= link_to_topic :pa_rails_3 %>, which will be due on October 30. As usual, remember, these can be hard so please, don't wait till the last minute!
+* **Projects** You should be up to UIBASIC
+
+##### Optional, very useful reading
 * [Writing Clean Code: Start to Bootstrap](https://www.toptal.com/front-end/frontend-clean-code-guide)
 * [Learn enough CSS to be dangerous](https://www.learnenough.com/css-and-layout-tutorial/css)
 * [Learn enough HTML to be dangerous](https://www.learnenough.com/html-tutorial)
-
-#### PR Meetings
-* How many PR meetings have each team had?
 
 <%= include_topic :css %>
 <%= include_topic :bootstrap %>
