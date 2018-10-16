@@ -12,6 +12,8 @@ cat: rails / SCAFFSDV
     As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
 
     * This one is tricky: how come there's no password field in the database, while there is a validation of a password attribute on the User model. Precisely how does the validataion work? Let's have a careful answer here, because it's the only warmup question I am asking for!
+    * What is a regular expression and what is it used for?
+    * What is a database index and what is it used for?
     * Are there one or two things you are still confused by? If not, what one or two things were the most memorable about your reading? <%= deliverable "Do the warmup in Latte and submit by 10am on the day of class." %>
 
 ##### Ongoing work
@@ -20,14 +22,21 @@ cat: rails / SCAFFSDV
 
 ##### Interesting, optional reading
 * [URLs are UI](https://www.hanselman.com/blog/URLsAreUI.aspx?utm_source=hackernewsletter&utm_medium=email&utm_term=fav)
+* [Rails Routing Guide](http://guides.rubyonrails.org/routing.html)
+* [RESTful Web Services: The Basics](http://www.ibm.com/developerworks/webservices/library/ws-restful/)
 
+#### Today
+* Comlex Schema Example
+    * [Stackoverflow Question About Databases](https://stackoverflow.com/questions/52786703/multi-target-has-many-through)
+    * [Private Github Repo](https://github.com/pitosalas/democomplexschema)
+* Special project with James Pustejovsky and Pito Salas
+* Discussion about current reading
 
 <%= include_topic :url_rails %>
 
 #### REST, Resources and Controllers
 * We've had some discussions about designing URLs
 * We talked about using a "directory structure-like" syntax for your URLs.
-* Reference: [Rails Guide about Routing](http://guides.rubyonrails.org/routing.html)
 
 #### Job of the controller
 * Recall, the URL is parsed by the router, which locates and calls the right controller
@@ -52,9 +61,6 @@ cat: rails / SCAFFSDV
 * Who calls the controller action?
 * What parameters are supplied automatically by the controller action?
 * Why does it take two separate actions to implement "create"?
-
-
-
 
 #### Look at next class
 * Look at homework <%= link_to_next_lecture %>
