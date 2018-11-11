@@ -1,32 +1,33 @@
 ---
 title: REST and Web Services
 desc: Intro to REST and Web Services
-homework: 1) Read and follow RORT Chapter 10; 2) Submit Showcase Day script
+homework: 1) Read and follow RORT Chapter 10; 2) Read and implement FullCalendar; 3) Submit Showcase Day script
 cat: advanced
 ---
 <%= homework_hdr %>
-**Legend**: <%=partbadge%>: Participation | <%= timebadge %>: Early | <%= pdfbadge %>: PDF | <%=zipbadge %>: Zipped
 
-1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 10, "Updating, Showing and Deleting Users". **YES: We skipped a chapter.** In this chapter we continue developing the big example, by adding logic to update users. Now we gradually move from authentication to authorization, which in a way is much simpler.
-
-    As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
+1. <%= partbadge %> <%= timebadge %> <%= pdfbadge %> **RORT:** Read [Ruby on Rails Tutorial (\[RORT\])](https://www.railstutorial.org/book/beginning#cha-beginning) Chapter 10, "Updating, Showing and Deleting Users". **YES: We skipped a chapter.** In this chapter we continue developing the big example, by adding logic to update users. Now we gradually move from authentication to authorization, which in a way is much simpler. As usual I really encourage and ask you to go through the code samples and actually type them in. You will see that it really helps your understanding and will assure your success in this course! Use your resources: the TAs, the class mailing list, stack overflow, google and push through to success! When you are done, go to Latte and answer these warmup questions:
 
     * What is a before_action? Try to be precise (but the answer can be expressed in two sentences.)
     * What does this css selector do: `.users { ...`
     * What are "strong parameters" and what is their purpose? What security risk are they meant to combat?
     * Are there one or two things you are still confused by? Code that you've written which is pure magic and meaningless to you? If not, what one or two things were the most memorable about your reading? <%= deliverable "The usual drill: please respond to the questions and post as a pdf to Latte before 10:00am" %>
 
-* <%= zipbadge %> **Read and implement**: [FullCalendar](https://fullcalendar.io) is a fantastic and popular JavaScript Calendar. Create a simple rails application that does nothing other than display and let the user interact a little with a calendar. There are many resources on the web to help you do this. I suggest taking a look at [fullcalendar-rails gem](https://rubygems.org/gems/fullcalendar-rails/versions/2.8.0.0) as well as [Drifting Ruby on FullCalendar](https://www.driftingruby.com/episodes/fullcalendar-events-and-scheduling). We need to see that you have varied a little from the example, not just entered in the code as-is. <%= deliverable "Zipped up Rails directory containing your example, plus a readme explaining what you did." %>
+1. <%= zipbadge %> **Read and implement**: [FullCalendar](https://fullcalendar.io) is a fantastic and popular JavaScript Calendar. Create a simple rails application that does nothing other than display and let the user interact a little with a calendar. There are many resources on the web to help you do this. I suggest taking a look at [fullcalendar-rails gem](https://rubygems.org/gems/fullcalendar-rails/versions/2.8.0.0) as well as [Drifting Ruby on FullCalendar](https://www.driftingruby.com/episodes/fullcalendar-events-and-scheduling). We need to see that you have varied a little from the example, not just entered in the code as-is. <%= deliverable "Zipped up Rails directory containing your example, plus a readme explaining what you did." %>
+1. <%= partbadge %> <%= pdfbadge %> <%= teambadge %> **Showcase Day Script**: Design the demo script for Showcase Day. It might seem early for this, but it is not! This script should drive the prioritization of your work over the weeks between now and Showcase Day. You will have 8 minutes for the presentation, so the demo itself will probably only be about 5 minutes long. It needs to be carefully scripted. Take care in thinking this through! The best demo scripts "hook" the viewer with an interesting, novel bit. They also tell a story, e.g. "Let's say I've not used by bicycle in 2 years and would like to get rid of it, and maybe exchange it for something else." Your demo script is a series of bulletted steps that are meant to be followed during the demo. Meet with your team and discuss what the demo script should be and choose one of you to write it. <%= team_deliverable "Demo Script, as pdf" %>
 
-1. <%= partbadge %> <%= pdfbadge %> **Showcase Day Script**: Design the demo script for Showcase Day. It might seem early for this, but it is not! This script should drive the prioritization of your work over the weeks between now and Showcase Day. You will have 8 minutes for the presentation, so the demo itself will probably only be about 5 minutes long. It needs to be carefully scripted. Take care in thinking this through! The best demo scripts "hook" the viewer with an interesting, novel bit. They also tell a story, e.g. "Let's say I've not used by bicycle in 2 years and would like to get rid of it, and maybe exchange it for something else." Your demo script is a series of bulletted steps that are meant to be followed during the demo. Meet with your team and discuss what the demo script should be and choose one of you to write it. <%= team_deliverable "Demo Script, as pdf" %>
+##### Ongoing Work
+* **Teams**: Continue working on your projects!
 
-#### For further study
+##### Interesting, optional reading
 
 * [What Restful actually means](https://codewords.recurse.com/issues/five/what-restful-actually-means?__s=sp8sgb9wzgpq5zssprse)
 * [Choosing a front end framework](https://medium.com/this-dot-labs/building-modern-web-applications-in-2017-791d2ef2e341)
+* [Respond_to without all the PAIN!](https://www.justinweiss.com/articles/respond-to-without-all-the-pain/)
 
 #### Discussion
 * Lets look at some Demo Scripts
+* Lets look at another <%= link_to_topic :classes_objects_polymorphism %>
 
 <%= include_topic :rest_web_services %>
 <%= include_topic :rails_api %>
