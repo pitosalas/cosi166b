@@ -37,4 +37,23 @@ http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter3/
 * Give the PRs a more clear charter and explain expectations to both students and PRs
 * Maybe tell them to meet only twice: give a demo to the PR and get them feedback
 
+## Notes from Fall 2018
+* React on Rails - Javascript
+* PA2 and Pa3 Rails - Assignments were a little early
+* Maybe move the brainstorming a little bit later.
+* RORT Chapters vis a vis Rails. 
+* Demonstrate techniques in class, e.g. ajax
+* DOnt ask RTHW submission. Just make it participation. 
+* Have an easy baseline ruby quiz by lecture 3
+* Perhaps insread of quiz have a equivalent complexity to the lesson 45 assignment
+* Fewer requests for students to brainstorm products
+* Less time on brainstorming product 
+* Pre-work: try to get them thinking about new products before first day of class
+* Use the lab time at the start of the course 
+* Cosnider ditching PA Rails 3. Show the solution to it later during lecture on JS
+* Analyze a well written Rails App
+* Practicum on RoR Web development.
+* Get rid of premature requesst to design prod db
+*  
+
 
