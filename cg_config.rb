@@ -16,14 +16,14 @@ COURSE_ABBREV = "166b"
 
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "aug-31-2018",
-  weekdays: [:tuesday, :friday, :friday],
-  start_times: ["12:30", "12:30", "14:00"],
-  end_times: ["13:50", "13:50", "16:50"],
-  start_time: "12:30",
-  end_time: "13:50",
+  first_day: "jan-14-2020",
+  weekdays: [:tuesday, :thursday, :friday],
+  start_times: ["15:30", "15:30", "14:00"],
+  end_times: ["16:50", "16:50", "16:50"],
+  start_time: "15:30",
+  end_time: "16:50",
   number: 41,
-  skips: ["sep-11-2018", "sep-25-2018", "nov-23-2018", "nov-23-2018"],
+  skips: [],
 )
 
 # Sections in the right hand margin of the page
