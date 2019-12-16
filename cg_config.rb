@@ -42,3 +42,7 @@ SECTION_CONFIG = [
 STYLING_CONFIG = {bullet_style: "\"font-size: 60%; width: 10px; color: grey\""}
 HOME_PAGE = "/content/intro/00_syllabus.md.erb"
 HELPFUL_BOX = false
+MENULINKS = [["TOC", "/content/intro/01_coursetoc.md/"],
+             ["Project Outline", "/content/projects/01_project_roadmap.md/"],
+             ["Deliverables", "/content/topics/courses/cosi166/cs_166_final_deliverables.md/"],
+             ["Examples", "http://pitosalas.github.io/brandeisprojects/"]].freeze
