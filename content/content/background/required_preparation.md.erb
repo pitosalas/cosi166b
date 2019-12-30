@@ -1,42 +1,41 @@
 ---
 title: Required Preparation
-desc: If you are on a Windows computer, you will have to do some extra preparation
+desc: The course starts fast so you absolutely have to prepare ahead of time!
 ---
 #### Background and motivation
 
 This course is all about Software Engineering. We will learn about it, from the programming, design, architecture, testing and deployment side. After this you will be really confident working on a new product from scratch! Cool eh? One of the big things that a Software Engineer has to learn is how to deal with unknowns and randomness and this pre-work might force you to confront a little of that even before the course starts!
 
-#### Ruby and Windows just don't get along!
-As you might know, this course uses Ruby (a programming language) and Ruby on Rails (a ruby-based framework) as the foundation. Ruby and Rails require that you be on a Linux or Unix based computer. For those of you using a Mac or an actual Linux laptop, you are all set.
+<%= callout("READ THIS", " I am serious when I recommend strongly that you invest a few hours before the first day of class. You will have a better time, learn more, and have more fun.") %>
 
-**For those of you on Windows, you have some work to do! See below for specifics.**
+#### 1. Install Ruby, Rails and required other software on your computer
 
-* You might read and think that you can do everything you need to on Windows.
-* You might think it's a nuisance to through this pre-work
-* You might think that you don't have enough free space
-* You might think that you will get to this later
-* You might have heard of something new in windows called WSL 
+There are tons of tutorials and guides on how to do this. Because they are constantly being updated and revised I will not give you all the possible links. Also note that some of this might already be on your mac, but it would be the **wrong version**!
 
-**You are mistaken**
+Here's one that I think is pretty up to date and good: 
 
-I've taught this course for multiple years now, and every single year one or two students resist setting up a Linux partition, and every single year, they have lots and lots of trouble and heartache. They sometimes even end up dropping the course. Please don't let this be you. Every year, we check again to see if Windows support of Ruby has progressed enough to change this requirement but it is still the case that Windows *just won't do*.
+* [Mac: Go Rails Ruby And Rails Install](https://gorails.com/setup/osx/10.15-catalina)
+* [Windows: Go Rails Ruby And Rails Install](https://gorails.com/setup/windows/10)
+* [Linux: Go Rails Ruby And Rails Install](https://gorails.com/setup/ubuntu/19.10)
 
-<%= callout("Assignment", " Your pre-work assignment (for Windows computers only) is to set up either a VMWare or Linux partition. This is mandatory.") %>
+Here is what you are required to have:
 
-#### What to do if you are on Windows
+##### Ruby 2.7.x - the latest version of Ruby
 
-<%= callout("NB", " Only required if your computer is Microsoft Windows. If you are already on MacOS or Linux, then none of this applies to you") %>
+1. I recommend using a tool called `rbenv` to help with the installation: [rbenv installer](https://github.com/rbenv/rbenv-installer#rbenv-installer)
 
-If you are on a Windows computer, we recommend that you use VMWare to create a Virtual Machine running Linux, and doing all your work there. Here are our instructions: <%= link_to_topic :install_rails_vmware %>
+##### Rails 6.x - the latest version of Rails
 
-##### Alternative
+1. Installing Rails is as simple as `$ gem install rails`
 
-If you prefer you could set up a linux partition on your Windows computer. Here are the instructions: <%= link_to_topic :linux_partition %>
+##### Other software
 
-### Suggested additional preparation
+1. You also must have a suitable text editor. I recommend [Visual Studio Code](https://code.visualstudio.com/). There are others out there of course: Sublime Text, Atom are both popular but all the kool kids use vscode!
 
-#### Learn Ruby
-In the first 10 days of the course we will fly through an introduction to Ruby programming. If you already know Ruby then you are probably all set. If you know Python well then you're in good shape.
+1. Install `git` (which you will need to use `github`)
+
+#### 2. Learn Ruby
+In the first week of the course we will fly through an introduction to Ruby programming. If you already know Ruby then you are probably all set. If you know Python well then you're in good shape.
 
 The rest of you are all competent Java programmers, so learning Ruby should be manageable. In fact I predict once you know Ruby you will love it.
 
@@ -44,9 +43,9 @@ Ruby is a very cool language with basic and advanced features. We will have a br
 
 Depending on how you best learn there are several approaches to take for learning Ruby. You can of course just use google to find resources and tutorails.
 
-The recommended self-study site is [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/preface.html). Students have had good success with it. Go through all the lessons up to 40. The first dozen or so are trivial, but soon it will get hard. It will pay off, believe me!
+Our self-study site is [Learn Ruby The Hard Way](http://learnrubythehardway.org/book/preface.html). Students have had good success with it. Go through all the lessons up to 40. The first dozen or so are trivial, but soon it will get hard. It will pay off, believe me!
 
-#### Learn the Unix Shell (Command Line)
+#### 3. Learn the (Unix) Shell (Command Line)
 Throughout the course we are going to use the Unix command line extensively. If you are on a Mac, this is what you use in `terminal`. You may have to use it a lot more than you have in the past. Here are a couple of resources:
 
 * [Mastering Bash and Terminal](https://www.blockloop.io/mastering-bash-and-terminal?utm_source=hackernewsletter&utm_medium=email&utm_term=fav)

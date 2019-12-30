@@ -5,7 +5,7 @@ desc: Everything you need to know before signing up for Capstone
 <% tbh = TableHelper.new(:normal) %>
 <% tbh.headers("", "") %>
 <% tbh.row("Instructors", "Pito Salas") %>
-<% tbh.row("Class Times", "Tuesday and Friday 12:30PM - 1:50PM, Friday 2:00pm-4:50pm (recitation)") %>
+<% tbh.row("Class Times", "Tuesday and Thursday 3:30PM - 4:50PM, Friday 2:00pm-4:50pm (recitation)") %>
 <% tbh.row("Location", "TBD") %>
 <% tbh.row("Office Hours", "Go to this link to reserve an appointment: https://calendly.com/pitosalas/ftf") %>
 <% tbh.row("Prerequisites", "COSI 12b and COSI 21a") %>
@@ -36,13 +36,10 @@ We cover a lot of ground in this course, and quite rapidly. Here are the central
 ##### Pre-requisites or permission
 Cosi12b and Cosi21a are required for admission to this course.
 
-##### Pre-work
-Students have all kinds of computers. I have nothing against Microsoft Windows, and you could take this course using just Microsoft Windows, but you're life (and ours) is just going to be more difficult. It just seems that the open source tools and libraries we use don't like Windows. So for this course, if your computer is set up with just windows, you are **required** to set up a Linux parition or a vagrant virtual box. **This is mandatory**
-
-Look here for the details of the <%= link_to_section :background, :required_preparation %>
 
 <%= include_topic :syllabus_change_policy %>
 #### Further detail
+* Look here for the details of the <%= link_to_section :background, :required_preparation %>
 * How grading works: <%= link_to_background :cs166_grading %>
 * Detailed learning objectives: <%= link_to_topic :goals_cosi166 %>
 * Complete list of lectures: <%= link_to_intro :coursetoc %>

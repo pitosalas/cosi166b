@@ -17,9 +17,9 @@ COURSE_ABBREV = "166b"
 # Schedule information. Note that Monday is day 0
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   first_day: "jan-14-2020",
-  weekdays: [:tuesday, :thursday, :friday],
-  start_times: ["15:30", "15:30", "14:00"],
-  end_times: ["16:50", "16:50", "16:50"],
+  weekdays: [:tuesday, :thursday],
+  start_times: ["15:30", "15:30"],
+  end_times: ["16:50", "16:50"],
   start_time: "15:30",
   end_time: "16:50",
   number: 41,
