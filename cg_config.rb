@@ -31,7 +31,6 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 SECTION_CONFIG = [
   SectionDef.new("Introduction", "intro", hidden: false, type: :section, bullet: :star),
   SectionDef.new("Lectures", "lectures", type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
-  SectionDef.new("Term Project", "projects", hidden: false, type: :section),
   SectionDef.new("Background", "background", hidden: false, type: :section),
   SectionDef.new("Topics", "topics", hidden: true, type: :section),
   SectionDef.new("Extras", "extras", hidden: true, type: :section),
@@ -43,6 +42,6 @@ STYLING_CONFIG = {bullet_style: "\"font-size: 60%; width: 10px; color: grey\""}
 HOME_PAGE = "/content/intro/00_syllabus.md.erb"
 HELPFUL_BOX = false
 MENULINKS = [["TOC", "/content/intro/01_coursetoc.md/"],
-             ["Project Outline", "/content/projects/01_project_roadmap.md/"],
+             ["Project Outline", "/content/intro/20_project_roadmap.md/"],
              ["Deliverables", "/content/topics/courses/cosi166/cs_166_final_deliverables.md/"],
              ["Examples", "http://pitosalas.github.io/brandeisprojects/"]].freeze
