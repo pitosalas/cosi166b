@@ -18,16 +18,6 @@ cat: db
 * **Project Teams:** You should be up to around **STORY**
 * **Rails PA 1** Working on <%= link_to_topic :pa_rails_1 %>. You can see the assigment and due dates here: <%= link_to_topic  :pa_rails_guide %>
 
-#### Review
-* Why Postgres?
-* Here's a way to set the default of Rails to postgres:
-
-<%= code_begin %>
-# [ ~/.railsrc ]
---database=postgresql
---skip-coffee
-<%= code_end %>
-
 ##### My addenda on getting the tricks work:
 
 * YMMV
@@ -41,8 +31,6 @@ cat: db
 * app/comment.rb - delete default scope
 * add gem 'hirb' to gemfile; bundle
 * in rails console, Hirb.enable
-
-<%= callout("NB", " If you don't know the schema of your app, you don't know your app!") %>
 
 <%= include_topic :ar_db_mechanics %>
 
