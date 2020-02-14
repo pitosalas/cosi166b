@@ -56,4 +56,6 @@ http://cosi166b-s2017.s3-website-us-west-2.amazonaws.com/content/lectures/iter3/
 * Get rid of premature requesst to design prod db
 *  
 
+## Notes from Spring 2020
+* Change "TA Partner" to "Client TA" and working with TA something graded
 
