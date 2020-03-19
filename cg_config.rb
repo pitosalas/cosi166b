@@ -23,7 +23,7 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   start_time: "15:30",
   end_time: "16:50",
   number: 41,
-  skips: ['feb-18-2020', 'feb-20-2020']
+  skips: ['feb-18-2020', 'feb-20-2020', 'mar-24-2020', 'apr-9-2020', 'apr-16-2020']
 )
 
 # Sections in the right hand margin of the page
