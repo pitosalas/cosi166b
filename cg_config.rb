@@ -43,5 +43,5 @@ HOME_PAGE = "/content/intro/00_syllabus.md.erb"
 HELPFUL_BOX = false
 MENULINKS = [["TOC", "/content/intro/01_coursetoc.md/"],
              ["Project Outline", "/content/intro/20_project_roadmap.md/"],
-             ["Deliverables", "/content/topics/courses/cosi166/cs_166_final_deliverables.md/"],
+             ["Deliverables", "/content/intro/03_term_project.md/"],
              ["Examples", "http://pitosalas.github.io/brandeisprojects/"]].freeze
